@@ -21,7 +21,7 @@
         <ul>
 <!-- blade templating foreach loop to loop over vacation collection passed in from route. note: calling of each attribute -->
         @foreach ($vacations as $vacation)
-        <li><a href="/vacation/{{ $vacation->id }}">{{ $vacation->location }}<span> </span>{{ $vacation->date }}</a></li>
+        <li><a href="/vacations/{{ $vacation->id }}">{{ $vacation->location }}<span> </span>{{ $vacation->date }}</a></li>
         @endforeach
       </ul>
 
